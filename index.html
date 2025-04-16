@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gourmet Foods - Iqbal Town, Near Moon Market</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>p</title>
     <link rel="canonical" href="index.html" />
 
-    <meta name="description" content="Discover the Best of Canada, One Experience at a Time!" />
-    <meta name="keywords" content="Gourmet Foods - Iqbal Town, Near Moon Market" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="p" />
     <link rel="icon" href="favicon.png" type="image/x-icon" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -22,42 +22,43 @@
     <!-- Favicon-->
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="home/css/styles.css" rel="stylesheet" /> 
-
     <style>
-        body {
-            overflow-x: hidden !important;
-        }
         .bg-header {
-            background-color: rgba(15, 87, 251, 0.6) !important;
-            background-color: rgba(15, 87, 251, 0.6) !important;
+        background-color: rgba(0, 0, 0, 0.6) !important;
         }
 
         .bg-footer {
             --bs-bg-opacity: 1;
-            background-image: linear-gradient( #0F57FB, #0F57FB) !important;
+        background-image: linear-gradient( #000000, #000000) !important;
         }
 
         .header-text-color {
-            color: #ffffff;
+        color: #ffffff ;
         }
 
+        .footer-text-color {
+        color: #ffffff ;
+        }
 
+        .footer-text-color .navbar-brand {
+        color: #ffffff ;
+        }
 
         .navbar-nav .active {
-            border-bottom: solid 1px #ffffff !important;
+        border-bottom: solid 1px #ffffff !important;
         }
 
         .top-area {
-            height: 30rem;
-            background-color: rgba(0, 0, 0, 0.5);
-            background-image: url(banner_image.png);
-            background-repeat: no-repeat;
-            background-position: 50% 0;
-            background-size: cover;
+            position: relative;
+            opacity: 1;
+            height: 400px;
+            /* background-color: rgba(0, 0, 0, 0.5) !important; */
         }
 
-        .header-transparent-layer {
+        .transparent-layer {
+            position: absolute;
             display: block;
+            position: absolute;
             left: 0;
             top: 0;
             width: 100%;
@@ -65,30 +66,39 @@
             background-color: rgba(0, 0, 0, 0.5) !important;
         }
 
-        .header-transparent-layer .contents {
-            padding: 2rem;
+        .top-area::before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url(banner_image.png);
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: cover;
         }
 
-        @media (min-width: 801px) {
-            .custom-position {
-                margin: 3rem auto;
-                width: 45%;
-                border-radius: 30px;
-                padding: 0;
-                margin-left: 10%;
-            }
+        .top-area>div {
+            position: relative;
         }
 
-        @media (max-width: 800px) {
-            .custom-position {
-                margin: 3rem auto;
-                width: 80%;
-                border-radius: 30px;
-                padding: 0;
-            }
-            .text-start {
-                text-align: center !important;
-            }
+        .head-title {
+            font-size: calc(1.75rem + 1.5vw);
+            font-weight: bolder;
+            color: #fff;
+        }
+
+        .head-tagline {
+            font-size: calc(.5rem + 1.5vw);
+            color: #fff;
+        }
+
+        .header-contents {
+            margin: 0 auto;
+            text-align: center;
         }
         body {
                     background-color: #292921;
@@ -109,25 +119,44 @@
                     border: 1px solid #d6b914 !important;
                 }
 
-                .bg-dark, .bg-header, .bg-footer, .dropdown-content2, dropdown-content2 a:hover {
+                .bg-dark, .bg-header, .bg-footer, .dropdown-content2 {
                     background-color:  #1f1d17 !important;
                     background-image: none;
                 }
+.dropdown-content2 a:hover{
+                    background-color:  #090806 !important;
+                    background-image: none;
+                }
 
-                .bg-dark, .navbar-brand {
+
+
+                .bg-dark, .navbar-brand, .lmcy_hfollow, .bottom_footer_menu_text, .bottom_footer_menu_text li a{
                     color: #f1b914 !important;
+                }
+
+                .lmcy_logo_n {
+                    color: #f1b914 !important;
+                }
+                .lmcy_header_magazine_style.lmcy_cus_top_share.header_layout_style3_custom .social_icon_header_top li a i{
+                color: #f1b914 !important;
                 }
 
                 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
                     color: #f1b914;
                 }
 
+                footer .social-link {
+                    color: #1f1d17 !important;
+                    background-color: #f1b914 !important;
+                }
+
                 .navbar-dark .navbar-nav .nav-link,
                 .dropdown-content a,
+                footer.py-5.bg-dark.text-center p,
                 footer.py-5.bg-dark.text-center a,
                 footer.py-5.bg-dark.text-center a:hover,
                 footer.py-5.bg-dark.text-center a:focus,
-                footer.py-5.bg-dark.text-center a:focus-visible {
+                footer.py-5.bg-dark.text-center a:focus-visible, .header-text-color {
                     color: #f1b914;
                 }
 
@@ -144,7 +173,7 @@
                     color: #f1b914;
                 }
 
-                footer.py-5.bg-dark.text-center {
+                footer.py-5.bg-dark.text-center, .footer-text-color {
                     color: #f1b914 !important;
                 }
 
@@ -178,7 +207,7 @@
 
 
                 .card-title, .card-heading {
-                    color: #404040;
+                    color: #ffffff;
                 }
 
                 .main-heading {
@@ -186,13 +215,17 @@
                 }
 
                 .card-text {
-                    color: #121212;
+                    color: #bbbbbb!important;
                     height: auto !important;
                     min-height: 140px;
                 }
+.card-text p {
+                    color: #bbbbbb!important;
+                    
+                }
                 .article-card-text {
                     color: #B5B5B5;
-                    
+                  
                 }
 .article-card-text * {
                     color: #B5B5B5 !important;
@@ -203,17 +236,10 @@
                     padding : 10px;
 
                 }
-.working-hours{
-background-color: #1d1c19 !important;
-                    border: 2px solid #12110e !important;                    
-}
-.working-hours-text{
-color: #ffffff !important;
-                    
-}
+
                 .cards-container .card {
                     background-color: #1d1c19 !important;
-                    border: 2px solid #12110e !important;
+                    border: 2px solid undefined !important;
                     border-radius: 14px;
                 }
 
@@ -222,7 +248,7 @@ color: #ffffff !important;
                 }
 
                 .cards-container .card .card-text {
-                    color: #bbbbbb;
+                    color: #bbbbbb!important;
                 }
                 .article-info {
                     color: #bbbbbb;
@@ -233,97 +259,189 @@ color: #ffffff !important;
 <body>
 <!-- Responsive navbar-->
 <div class="top-area">
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-        <div class="container px-5">
-            <a style="color: inherit; text-decoration: inherit;" href="index.html">
-                    <span class="navbar-brand">
+    <div class="transparent-layer">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-header">
+            <div class="container px-5">
+                <a style="color: inherit; text-decoration: inherit;" href="index.html">
+                        <span class="navbar-brand">
                         <img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()">
                     </span>
-                <span class="navbar-brand header-text-color">Gourmet Foods - Iqbal Town, Near Moon Market</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link header-text-color" href="index.html">Home</a>
-                    </li>
-                    <div class="nav-item {{service_active}} dropdown">
-                        <button class="header-text-color dropbtn is-mobile">Services</button>
-                        <a class="nav-link header-text-color dropbtn is-desktop" href="services.html">Services</a>
-                        <div class="dropdown-content">
-                            <div class="dropdown-content2">
-                                <li class="menu-item current-menu-item current_page_item"><a class="bd_left"
-                                                                                        href="bread.html">bread
+                    <span class="navbar-brand header-text-color">p</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+                        <li class="nav-item {{home_active}}">
+                            <a class="nav-link header-text-color" href="index.html">Home</a>
+                        </li>
+                        <div class="nav-item {{service_active}} dropdown" style="display:">
+                            <button class="header-text-color dropbtn is-mobile">Pages</button>
+                            <a class="nav-link header-text-color dropbtn is-desktop" href="pages.html">Pages</a>
+                            <div class="dropdown-content">
+                                <div class="dropdown-content2">
+                                    <li class="menu-item current-menu-item current_page_item"><a class="bd_left"
+                                                                                        href="local-seo.html">local seo
                                                                                         <span class="border-menu"></span></a></li>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <li class="nav-item {{blog_active}}">
-                        <a class="nav-link header-text-color" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item {{about_us_active}}" style="display: ">
-                        <a class="nav-link header-text-color" href="aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item {{contact_active}}" style="display: ">
-                        <a class="nav-link header-text-color" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-4 mb-2 mb-lg-0" style="display: inherit !important;">
-                    <li class="nav-item" style="display: none">
-                        <a class="nav-link header-text-color" target="_blank" href="">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item" style="display: inline-block">
-                        <a class="nav-link header-text-color" target="_blank" href="s">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item" style="display: inline-block">
-                        <a class="nav-link header-text-color" target="_blank" href="g">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item" style="display: none">
-                        <a class="nav-link header-text-color" target="_blank" href="">
-                            <i class="fa-brands fa-pinterest"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item" style="display: inline-block">
-                        <a class="nav-link header-text-color" target="_blank" href="e">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg overflow-hidden custom-position">
-        <div class="header-transparent-layer">
-            <div class="row col-lg-12 align-items-start contents">
-                <div class="col-lg-12 text-start">
-                    <h1 class="font-weight-light head-title">Gourmet Foods - Iqbal Town, Near Moon Market</h1>
-                    <span class="font-weight-light head-tagline">G79V+24H, Main Blvd Allama Iqbal Town,Lahore,PK,54000</span>
-                </div>
-                <div class="col-lg-12 text-start mt-5">
-                    <a class="btn btn-banner-theme btn-md mx-1 mt-1" style="display: " target="_blank" href="tel:+9242111111678">Call Now</a>
-                    <a class="btn btn-banner-theme btn-md mx-1 mt-1" style="display: none" target="_blank" href="mailto:">Email Now</a>
-                    <button id="myBtn" class="btn btn-banner-theme btn-md mx-1 mt-1" style="display: ">Get Directions</button>
+                        <li class="nav-item {{blog_active}}">
+                            <a class="nav-link header-text-color" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item {{contact_active}}" style="display: none">
+                            <a class="nav-link header-text-color" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-4 mb-2 mb-lg-0" style="display: none !important;">
+                        <li class="nav-item" style="display: none">
+                            <a class="nav-link header-text-color" target="_blank" href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="display: none">
+                            <a class="nav-link header-text-color" target="_blank" href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="display: none">
+                            <a class="nav-link header-text-color" target="_blank" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="display: none">
+                            <a class="nav-link header-text-color" target="_blank" href="">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="display: none">
+                            <a class="nav-link header-text-color" target="_blank" href="">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+
+
+
+        <!-- Heading Row-->
+        <div class="gx-0 align-items-center py-lg-6">
+            <div class="header-contents">
+                <h1 class="head-title">p</h1>
+                <h4 class="head-tagline"></h4>
+            </div>
+            <div class="header-contents">
+                <a class="btn btn-banner-theme btn-md mt-2" style="display: none" target="_blank" href="tel:">Call Now</a>
+                <a class="btn btn-banner-theme btn-md mt-2" style="display: none" target="_blank" href="mailto:">Email Now</a>
+                <button id="myBtn" class="btn btn-banner-theme btn-md mt-2" style="display: none">Get Directions</button>
+            </div>
         </div>
-    </nav>
+    </div>
 </div>
 
-<div class="container article-container">
 
+<div class="container article-container">
     <header class="py-2 border-bottom mb-4" style="display: none">
         <div class="ql-editor p-4 article-card-text" id="sitewide-header">
             
         </div>
     </header>
 
-    <!-- Heading Row-->
+    <div class="row gx-4 gx-lg-5 align-items-center pt-lg-5 card-text" style=" display: none ">
+        <div class="col-lg-3">
+            <h2 class="font-weight-light">Working Hours</h2>
+        </div>
+        <div class="col-lg-5">
+            <h5>Today: <span class="text-primary today_hours main-heading">{{today_time}}</span></h5>
+        </div>
+    </div>
+    <div class="row gx-4 gx-lg-5 align-items-center card-text py-lg-4" style=" display: none ">
+        <div class="col-lg-4">
+            <table width="100%">
+                <tr>
+                    <td width="30%">
+                        <h5 class="text-gray">Mon:</h5>
+                    </td>
+                    <td>
+                        <h5 class="working_hours">{{monday_time}}</h5>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4">
+            <table width="100%">
+                <tr>
+                    <td width="30%">
+                        <h5 class="text-gray">Tue:</h5>
+                    </td>
+                    <td>
+                        <h5 class="working_hours">{{tuseday_time}}</h5>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4">
+            <table width="100%">
+                <tr>
+                    <td width="30%">
+                        <h5 class="text-gray">Wed:</h5>
+                    </td>
+                    <td>
+                        <h5 class="working_hours">{{wednesday_time}}</h5>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4">
+            <table width="100%">
+                <tr>
+                    <td width="30%">
+                        <h5 class="text-gray">Thur:</h5>
+                    </td>
+                    <td>
+                        <h5 class="working_hours">{{thursday_time}}</h5>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4">
+            <table width="100%">
+                <tr>
+                    <td width="30%">
+                        <h5 class="text-gray">Fri:</h5>
+                    </td>
+                    <td>
+                        <h5 class="working_hours">{{friday_time}}</h5>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4">
+            <table width="100%">
+                <tr>
+                    <td width="30%">
+                        <h5 class="text-gray">Sat:</h5>
+                    </td>
+                    <td>
+                        <h5 class="working_hours">{{staturday_time}}</h5>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4">
+            <table width="100%">
+                <tr>
+                    <td width="30%">
+                        <h5 class="text-gray">Sun:</h5>
+                    </td>
+                    <td>
+                        <h5 class="working_hours">{{sunday_time}}</h5>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
     <div class="py-2 border-bottom mb-2" style="display: none">
         <div class="ql-editor article-card-text">
@@ -331,210 +449,112 @@ color: #ffffff !important;
         </div>
     </div>
 
-    <div class="row gx-4 gx-lg-5 align-items-center py-lg-5">
+    <div class="row gx-4 gx-lg-5 align-items-center py-lg-5" style="display:">
         <div class="col-lg-12 py-lg-2">
-            <h3 class="font-weight-light main-heading">Our services</h3>
+            <h3 class="main-heading">Pages</h3>
         </div>
 
-        <div class="col-lg-6 mb-5 cards-container">
-                    <div class="card h-100 rounded-4 overflow-hidden">
-                        <a class="undecorated" href="bread.html">
-                            <div class="card-body p-0">
-                                <div class="col-lg-12"><img class="img-fluid mb-4 mb-lg-0" src="bread-613551.jpg?key=hNz14m" alt="bread" /></div>
-                                <div class="col-lg-12 p-3">
-                                    <div class="d-flex align-items-center title-box ">
-                                        <h2 class="card-title">bread</h2>
-                                    </div>
-                                    <p class="card-text py-lg-2">The allure of freshly baked bread often rests on its crust, which provides that satisfying texture and complex flavor. To achieve the perfect crust, it's essential to understand the role of steam in the baking process. Introducing steam into the oven......</p>
-                                    <div style="float: right" class="mb-3">
-                                        <a class="btn btn-theme btn-sm p-2" href="bread.html">
-                                            <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+        <div class="col-lg-4">
+                <a href="local-seo.html"  style="text-decoration: none;color: inherit;" >
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="https://pub-817e745bae054e7a9d65afbddbf23489.r2.dev/p-4776_MTMzNjM=/local-seo-5866301.jpg?key=inJ97d" alt="local seo" />
+                </a>
+            </div>
+                <div class="col-lg-8">
+                    <a href="local-seo.html"  style="text-decoration: none;color: inherit;">
+                        <div class="d-flex align-items-center title-box">
+                            <h2 class="card-title">local seo</h2>
+                        </div>
+                        <p class="card-text py-lg-2">Local SEO focuses on optimizing a business's online presence to attract more customers from relevant local searches. It differs from standard search engine optimization (SEO) by prioritizing location-based strategies that enhance visibility on platfo......
+                            <a style="text-decoration:none" href="local-seo.html" class="text-theme">Read More</a>
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <hr/>
                 </div>
 
-        <div class="col-md-12 my-4">
-            <a href="services.html" style="text-decoration: none">
-                <div class="bg-white rounded-4 all-article-link" style="padding-top:30px;padding-bottom:20px;border: 1px solid #CED4DA; height: 80px; text-align:center">
-                    <h4 class="font-weight-light m-0">View All Services</h4>
+        <div class="col-md-12">
+            <a href="pages.html" style="text-decoration: none">
+                <div class="all-article-link" style="padding-top:20px;padding-bottom:20px;border: 1px solid #bdbdbd; border-radius: 3px; height: 70px; text-align:center">
+                    <h4 class="">View All Pages</h4>
                 </div>
             </a>
         </div>
     </div>
 
-    <div class="position-absolute working-hours pb-5" style="left: 0; right: 0; display:  ">
-        <div class="row container gx-4 gx-lg-5 align-items-center px-4 pt-5 m-auto  working-hours-text">
-            <div class="col-lg-3">
-                <h2 class="font-weight-light">Working Hours</h2>
-            </div>
-            <div class="col-lg-5 ">
-                <h5>Today: <span class=" today_hours main-heading">6:00 AM - 11:59 PM</span></h5>
-            </div>
-        </div>
-        <div class="row container gx-4 gx-lg-5 align-items-center py-lg-4 px-4 m-auto working-hours-text" style=" display:  ">
-            <div class="col-lg-4">
-                <table width="100%">
-                    <tr>
-                        <td width="30%">
-                            <h5 class="">Mon:</h5>
-                        </td>
-                        <td>
-                            <h5 class="working_hours">6:00 AM - 11:59 PM</h5>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-4">
-                <table width="100%">
-                    <tr>
-                        <td width="30%">
-                            <h5 class="">Tue:</h5>
-                        </td>
-                        <td>
-                            <h5 class="working_hours">6:00 AM - 11:59 PM</h5>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-4">
-                <table width="100%">
-                    <tr>
-                        <td width="30%">
-                            <h5 class="">Wed:</h5>
-                        </td>
-                        <td>
-                            <h5 class="working_hours ">6:00 AM - 11:59 PM</h5>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-4">
-                <table width="100%">
-                    <tr>
-                        <td width="30%">
-                            <h5 class="">Thur:</h5>
-                        </td>
-                        <td>
-                            <h5 class="working_hours ">6:00 AM - 11:59 PM</h5>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-4">
-                <table width="100%">
-                    <tr>
-                        <td width="30%">
-                            <h5 class="">Fri:</h5>
-                        </td>
-                        <td>
-                            <h5 class="working_hours ">6:00 AM - 11:59 PM</h5>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-4">
-                <table width="100%">
-                    <tr>
-                        <td width="30%">
-                            <h5 class="">Sat:</h5>
-                        </td>
-                        <td>
-                            <h5 class="working_hours ">6:00 AM - 11:59 PM</h5>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-lg-4">
-                <table width="100%" class="">
-                    <tr>
-                        <td width="30%">
-                            <h5 class="">Sun:</h5>
-                        </td>
-                        <td>
-                            <h5 class="working_hours ">6:00 AM - 11:59 PM</h5>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
 
-    <div class="blogs-mt" style="display: "></div>
     <div class="row gx-4 gx-lg-5 align-items-center py-lg-5 cards-container">
         <div class="col-lg-12 py-lg-2">
-            <h3 class="font-weight-light main-heading">Latest Blog Posts</h3>
+            <h3 class="font-weight-light main-heading">p: Latest Blog Posts</h3>
         </div>
 
 
-        <div class="col-md-6 mb-5 cards-container">
-                    <div class="card h-100 bg-white rounded-4 ">
-                      <a class="undecorated" href="round-up-the-most-popular-bread-recipes-you-should-try.html">
+        <div class="col-md-6 mb-5">
+                    <div class="card h-100">
                         <div class="card-body">
+                        <a href="how-to-do-local-seo-on-google.html" style="text-decoration: none;color: inherit;">
                             <div class="py-lg-2" style="display: {{show_date_auth_section}}">
                                 <span class="article-info" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2025-04-16</span>
-                                <span class="article-info" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                                <span class="article-info" style="display: inline"><i class="fa fa-user" style="padding-right: 10px"></i>iqa</span>
                             </div>
-                            <div class="d-flex align-items-center title-box ">
-                                <h2 class="card-title">Round Up: The Most Popular Bread Recipes You Should Try</h2>
+                             <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">How to do local SEO on Google?</h2>
                             </div>
-                            <p class="card-text py-lg-2">Gluten-free bread has gained popularity among those with dietary restrictions and anyone looking to diversify their baking repertoire. Various flours, such as almond, coconut, and buckwheat, can create delicious alternatives that satisfy different ta......</p>
+                            <p class="card-text py-lg-2">Customer reviews play a crucial role in enhancing your local SEO visibility. They not only help establish trust and credibility with potential customers but also influence search rankings on platforms like Google. Positive reviews can lead to higher ......</p>
                             <div style="float: right">
-                                <a class="btn btn-theme btn-sm" href="round-up-the-most-popular-bread-recipes-you-should-try.html">
+                                <a class="btn btn-theme btn-sm" href="how-to-do-local-seo-on-google.html">
                                     <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
                                 </a>
                             </div>
+                           </a>
                         </div>
-                      </a>
                     </div>
-                </div><div class="col-md-6 mb-5 cards-container">
-                    <div class="card h-100 bg-white rounded-4 ">
-                      <a class="undecorated" href="what-to-look-for-when-buying-fresh-bread-at-the-bakery.html">
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100">
                         <div class="card-body">
+                        <a href="how-much-does-local-seo-cost.html" style="text-decoration: none;color: inherit;">
                             <div class="py-lg-2" style="display: {{show_date_auth_section}}">
                                 <span class="article-info" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2025-04-16</span>
-                                <span class="article-info" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                                <span class="article-info" style="display: inline"><i class="fa fa-user" style="padding-right: 10px"></i>iqa</span>
                             </div>
-                            <div class="d-flex align-items-center title-box ">
-                                <h2 class="card-title">What to Look for When Buying Fresh Bread at the Bakery</h2>
+                             <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">How much does local SEO cost?</h2>
                             </div>
-                            <p class="card-text py-lg-2">When selecting fresh bread at the bakery, the color of the crust serves as a vital indicator of its quality and freshness. A golden-brown hue often suggests that the bread was baked properly, releasing moisture while developing a desirable texture. D......</p>
+                            <p class="card-text py-lg-2">Implementing effective local SEO strategies is essential for businesses aiming to improve their visibility in local search results. One key approach is optimizing Google My Business (GMB) listings. This involves ensuring that all business information......</p>
                             <div style="float: right">
-                                <a class="btn btn-theme btn-sm" href="what-to-look-for-when-buying-fresh-bread-at-the-bakery.html">
+                                <a class="btn btn-theme btn-sm" href="how-much-does-local-seo-cost.html">
                                     <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
                                 </a>
                             </div>
+                           </a>
                         </div>
-                      </a>
                     </div>
-                </div><div class="col-md-6 mb-5 cards-container">
-                    <div class="card h-100 bg-white rounded-4 ">
-                      <a class="undecorated" href="review-of-the-best-bread-machines-on-the-market.html">
+                </div><div class="col-md-6 mb-5">
+                    <div class="card h-100">
                         <div class="card-body">
+                        <a href="is-doing-a-local-seo-worth-it.html" style="text-decoration: none;color: inherit;">
                             <div class="py-lg-2" style="display: {{show_date_auth_section}}">
                                 <span class="article-info" style="padding-right: 30px; display: inline"><i class="fa fa-calendar" style="padding-right: 10px"></i>2025-04-16</span>
-                                <span class="article-info" style="display: none"><i class="fa fa-user" style="padding-right: 10px"></i></span>
+                                <span class="article-info" style="display: inline"><i class="fa fa-user" style="padding-right: 10px"></i>iqa</span>
                             </div>
-                            <div class="d-flex align-items-center title-box ">
-                                <h2 class="card-title">Review of the Best Bread Machines on the Market</h2>
+                             <div class="d-flex align-items-center title-box ">
+                                <h2 class="card-title">Is doing a local SEO worth it?</h2>
                             </div>
-                            <p class="card-text py-lg-2">Multi-functional bread machines have gained immense popularity among baking enthusiasts for their versatility. Many of these models not only knead and bake bread but also offer settings for dough preparation, pizza crust, jam, and even cake. This cap......</p>
+                            <p class="card-text py-lg-2">Many businesses have experienced dramatic growth through effective local SEO strategies. A small coffee shop in a bustling city increased its foot traffic by 60% after optimizing its Google My Business profile. By focusing on local keywords, engaging......</p>
                             <div style="float: right">
-                                <a class="btn btn-theme btn-sm" href="review-of-the-best-bread-machines-on-the-market.html">
+                                <a class="btn btn-theme btn-sm" href="is-doing-a-local-seo-worth-it.html">
                                     <span style="padding-right: 10px">Read More</span><i class="fa fa-arrow-right"></i>
                                 </a>
                             </div>
+                           </a>
                         </div>
-                      </a>
                     </div>
                 </div>
-        <div class="col-md-12 mt-5">
+        <div class="col-md-12">
             <a href="blog.html" style="text-decoration: none">
-                <div class="bg-white all-article-link rounded-4" style="padding-top:30px;padding-bottom:20px;border: 1px solid #bdbdbd; height: 80px; text-align:center">
-                    <h4 class="font-weight-light">View All Blog Posts</h4>
+                <div class="all-article-link" style="padding-top:20px;padding-bottom:20px;border: 1px solid #bdbdbd; border-radius: 3px; height: 70px; text-align:center">
+                    <h4 class="">View All Blog Posts</h4>
                 </div>
             </a>
         </div>
@@ -549,22 +569,19 @@ color: #ffffff !important;
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; display: ">
-                <iframe src="https://maps.google.com/maps?q=Gourmet+Foods+-+Iqbal+Town%2C+Near+Moon+Market|G79V%2B24H%2C+Main+Blvd+Allama+Iqbal+Town%2C+Gulshan+Block+Allama+Iqbal+Town%2C+Lahore%2C+54000|ChIJXQS0C3QDGTkR3bqanJzhLDE|31.517557,74.292864&hl=es;z=14&output=embed" frameborder="0" style="border:0; " allowfullscreen></iframe>
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; display: none">
+                <iframe src="" frameborder="0" style="border:0; " allowfullscreen></iframe>
             </div>
             
         </div>
     </div>
-</div>
-<div style="margin-bottom: -6px; display: ">
-    <iframe src="https://maps.google.com/maps?q=Gourmet+Foods+-+Iqbal+Town%2C+Near+Moon+Market|G79V%2B24H%2C+Main+Blvd+Allama+Iqbal+Town%2C+Gulshan+Block+Allama+Iqbal+Town%2C+Lahore%2C+54000|ChIJXQS0C3QDGTkR3bqanJzhLDE|31.517557,74.292864&hl=es;z=14&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 
 
 <!-- Footer-->
 
-<footer class="py-5 bg-dark text-center footer-text-color">
+<footer class="py-5 bg-dark text-center ">
 
     <div class="container">
         <div class="row  py-lg-3">
@@ -576,21 +593,21 @@ color: #ffffff !important;
                                 <a style="color: inherit;text-decoration: auto;" href="index.html"><img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()"></a>
                             </h2>
                         </td>
-                        <td style="text-align: left" class="footer-text-color">
-                            <h2><a style="text-decoration: auto;" href="index.html">Gourmet Foods - Iqbal Town, Near Moon Market</a></h2>
+                        <td style="text-align: left" class="">
+                            <h2><a style="text-decoration: auto;" href="index.html">p</a></h2>
                         </td>
                     </tr>
-                    <tr style="display: ">
-                        <td width="15%"><i class="fa fa-map-marker-alt footer-text-color"></i></td>
-                        <td style="text-align: left" class="footer-text-color">G79V+24H, Main Blvd Allama Iqbal Town,Lahore,PK,54000</td>
-                    </tr>
-                    <tr style="display: ">
-                        <td width="15%"><i class="fa fa-phone footer-text-color"></i></td>
-                        <td style="text-align: left" class="footer-text-color ">+9242111111678</td>
+                    <tr style="display: none">
+                        <td width="15%"><i class="fa fa-map-marker-alt "></i></td>
+                        <td style="text-align: left" class=""></td>
                     </tr>
                     <tr style="display: none">
-                        <td width="15%"><i class="fa fa-envelope footer-text-color"></i></td>
-                        <td style="text-align: left" class="footer-text-color"></td>
+                        <td width="15%"><i class="fa fa-phone "></i></td>
+                        <td style="text-align: left" class=" "></td>
+                    </tr>
+                    <tr style="display: none">
+                        <td width="15%"><i class="fa fa-envelope"></i></td>
+                        <td style="text-align: left" class=""></td>
                     </tr>
                 </table>
 
@@ -600,17 +617,17 @@ color: #ffffff !important;
             <div class="col-md-4">
                 <table class="float-start float-md-end" style="margin-left: 40px;">
                     <tr>
-                        <td style="text-align: left;display: inherit"><a class=" footer-text-color" style="text-decoration: none" href="terms.html">Terms of Use</a></td>
+                        <td style="text-align: left;display: inherit"><a class="" style="text-decoration: none" href="terms.html">Terms of Use</a></td>
                     </tr>
 
                     <tr>
-                        <td style="text-align: left;display: inherit"><a class="footer-text-color" style="text-decoration: none" href="privacy.html">Privacy Policy</a></td>
+                        <td style="text-align: left;display: inherit"><a class="" style="text-decoration: none" href="privacy.html">Privacy Policy</a></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;display: inherit"><a class=" footer-text-color" style="text-decoration: none" href="sitemap.html">Sitemap</a></td>
+                        <td style="text-align: left;display: inherit"><a class="" style="text-decoration: none" href="sitemap.html">Sitemap</a></td>
                     </tr>
                     <tr>
-                        <td style="text-align: left;display: "><a class=" footer-text-color" style="text-decoration: none" href="contact.html">Contact Us</a></td>
+                        <td style="text-align: left;display: none"><a class="" style="text-decoration: none" href="contact.html">Contact Us</a></td>
                     </tr>
                 </table>
 
@@ -618,29 +635,29 @@ color: #ffffff !important;
         </div>
     </div>
 
-    <ul class="mt-3 mb-3" style="display: inherit !important">
+    <ul class="mt-3 mb-3" style="display: none !important">
         <li class="list-inline-item" style="display: none">
-            <a style="text-decoration: none" class="footer-text-color  mr-3" target="_blank" href=""><i class="fa-2x icon-social-facebook"></i></a>
-        </li>
-        <li class="list-inline-item" style="display: inline-block">
-            <a style="text-decoration: none" class="footer-text-color   mr-3" target="_blank" href="s"><i class="fa-2x icon-social-twitter"></i></a>
-        </li>
-        <li class="list-inline-item" style="display: inline-block">
-            <a style="text-decoration: none" class=" footer-text-color   mr-3" target="_blank" href="g"><i class="fa-2x icon-social-instagram"></i></a>
+            <a style="text-decoration: none" class=" mr-3" target="_blank" href=""><i class="fa-2x icon-social-facebook"></i></a>
         </li>
         <li class="list-inline-item" style="display: none">
-            <a style="text-decoration: none" class="footer-text-color  mr-3" target="_blank" href=""><i class="fa-2x icon-social-pinterest"></i></a>
+            <a style="text-decoration: none" class=" mr-3" target="_blank" href=""><i class="fa-2x icon-social-twitter"></i></a>
         </li>
-        <li class="list-inline-item" style="display: inline-block">
-            <a style="text-decoration: none" class="footer-text-color   mr-3" target="_blank" href="e"><i class="fa-2x icon-social-youtube"></i></a>
+        <li class="list-inline-item" style="display: none">
+            <a style="text-decoration: none" class="   mr-3" target="_blank" href=""><i class="fa-2x icon-social-instagram"></i></a>
+        </li>
+        <li class="list-inline-item" style="display: none">
+            <a style="text-decoration: none" class=" mr-3" target="_blank" href=""><i class="fa-2x icon-social-pinterest"></i></a>
+        </li>
+        <li class="list-inline-item" style="display: none">
+            <a style="text-decoration: none" class="  mr-3" target="_blank" href=""><i class="fa-2x icon-social-youtube"></i></a>
         </li>
     </ul>
 
-    <div class="text-white">
+    <div class="">
         <hr/>
     </div>
     <div class="container">
-        <p class="m-0 text-center">Copyright &copy; Gourmet Foods - Iqbal Town, Near Moon Market. All Rights Reserved.</p>
+        <p class="m-0 text-center ">Copyright &copy; p. All Rights Reserved.</p>
     </div>
 </footer>
 <!-- Bootstrap core JS-->
